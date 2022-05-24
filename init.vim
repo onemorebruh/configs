@@ -4,6 +4,8 @@
 :set tabstop=4
 :set smarttab
 :set mouse=a
+:colorscheme pablo
+:set noswapfile
 
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim')) "Если vim-plug не стоит
   silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs "Создать директорию
@@ -26,6 +28,12 @@ Plug 'mattn/emmet-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'mxw/vim-jsx'
 
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'L3MON4D3/LuaSnip'
+
 call plug#end()
 
 let g:airline_powerline_fonts = 1 "Включить поддержку Powerline шрифтов
@@ -45,3 +53,4 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
 let g:user_emmet_mode='a'
+
