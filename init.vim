@@ -4,7 +4,7 @@
 :set tabstop=4
 :set smarttab
 :set mouse=a
-:colorscheme pablo
+:colorscheme dedsec
 :set noswapfile
 
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim')) "Если vim-plug не стоит
