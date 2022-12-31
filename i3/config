@@ -204,7 +204,7 @@ client.focused #4c7899 #285577 #ffffff #2e9ef4 #285577
 bindsym $mod+Ctrl+Up resize grow height 1 px or 1 ppt
 bindsym $mod+Ctrl+Down resize shrink height 1 px or 1 ppt
 #autostart
-exec --no-startup-id setxkbmap us,ru -option 'grp:alt_shift_toggle'
+exec --no-startup-id setxkbmap us,ru -option 'grp:win_shift_toggle'
 exec --no-startup-id numlockx on
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 # gaps

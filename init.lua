@@ -71,7 +71,7 @@ lsp.preset('recommended')
 lsp.nvim_workspace()
 lsp.setup()
 
-local servers = { 'pyright', 'tsserver', 'jdtls' }
+local servers = { 'pyright', 'tsserver', 'jdtls' ,'rust-analyzer', "clangd", "cssls"}
 for _, lsp in pairs(servers) do
     require('lspconfig')[lsp].setup {
         on_attach = on_attach,
@@ -86,3 +86,4 @@ for type, icon in pairs(signs) do
     local hl = "DiagnosticSign" .. type
     vim.fn.sign_define(hl, { text = icon, texthl= hl, numhl = hl })
 end
+
