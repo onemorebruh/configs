@@ -150,6 +150,11 @@ _G.packer_plugins = {
     path = "/home/ira/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthompson/packer.nvim"
   },
+  ["vem-tabline"] = {
+    loaded = true,
+    path = "/home/ira/.local/share/nvim/site/pack/packer/start/vem-tabline",
+    url = "https://github.com/pacha/vem-tabline"
+  },
   ["vim-airline"] = {
     loaded = true,
     path = "/home/ira/.local/share/nvim/site/pack/packer/start/vim-airline",

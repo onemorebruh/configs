@@ -11,6 +11,7 @@ require("packer").startup(function(use)
   use 'mattn/emmet-vim'
   use 'scrooloose/nerdtree'
   use 'mxw/vim-jsx'
+  use 'pacha/vem-tabline'
 -- LSP
   use {
     'VonHeikemen/lsp-zero.nvim',
