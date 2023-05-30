@@ -1,0 +1,14 @@
+- name: Update Arch Linux machines
+  hosts: group_base
+  become: yes
+
+  tasks:
+    - name: Update package database
+      pacman:
+        update_cache: yes
+      register: update_result
+
+    - name: Upgrade packages
+      pacman:
+        upgrade: yes
+      when: update_result.changed
