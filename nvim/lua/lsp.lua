@@ -9,7 +9,6 @@ local servers = {
   [[rust_analyzer]],
   [[clangd]],
   [[cssls]],
-  [[sumneko_lua]],
   [[html]],
 }
 
