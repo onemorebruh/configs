@@ -24,3 +24,5 @@ This is a repo I use for saving my current config files
 - [ ] add xinitrc
 - [ ] make and add tmux config
 - [ ] update `arch_update_playbook` so it will install all packages I need on all the arch based servers
+- [ ] add comments to confign
+- [ ] set close completions by `ESC` in nvim

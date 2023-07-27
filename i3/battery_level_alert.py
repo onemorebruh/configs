@@ -7,5 +7,5 @@ import time
 while True:
     battery = psutil.sensors_battery()
     if battery.percent < 20:
-        stream = os.popen(f'notify-send "{battery.percent}"')
+        stream = os.popen(f'notify-send " battery is {battery.percent}% charged"')
     time.sleep(5)
