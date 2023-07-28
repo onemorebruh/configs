@@ -5,8 +5,9 @@ cd $HOME/configs
 cp -r nvim $HOME/.config/
 cp -r i3 $HOME/.config/
 cp -r i3status $HOME/.config/
+cp -r dunst $HOME/.config/ 
+cp -r neofetch $HOME/.config/
 cp alacritty.yml $HOME/.alacritty.yml
-cp vimrc $HOME/.vimrc
 cp config.fish $HOME/.config/fish/config.fish
 
 # clone dependencies
