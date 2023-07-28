@@ -199,6 +199,7 @@ bar {
 set $green #73ad24
 set $grey #8c8488
 set $black #0a0c09
+set $purpule #f21bb9
 
 exec setxkbmap "us,ru" ",winkeys" "grp:win_space_toggle" #change lang to rus
 # change workspases
@@ -210,7 +211,7 @@ bindsym $mod+Control+Right workspace next
 #
 #
 ## visualisation
-client.focused #4c7899 #285577 #ffffff #2e9ef4 #285577
+client.focused $grey $green $purpule $black $green
 bindsym $mod+Ctrl+Up resize grow height 1 px or 1 ppt
 bindsym $mod+Ctrl+Down resize shrink height 1 px or 1 ppt
 #autostart

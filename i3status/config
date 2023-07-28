@@ -9,6 +9,8 @@
 general {
         colors = true
         interval = 3
+        color_good = "#07cf2A"
+        color_bad = "#f21bb9"
 }
 
 order += "ethernet _first_"
