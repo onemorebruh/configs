@@ -32,3 +32,4 @@ This is a repo I use for saving my current config files
 - [ ] update `arch_update_playbook` so it will install all packages I need on all the arch based servers
 - [ ] add comments to config
 - [ ] set close completions by `ESC` in nvim
+- [x] add installation of modified my nerd-fonts jetbrains mono

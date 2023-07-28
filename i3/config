@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:JetBrains Mono 8
+font pango:JetBrains Nerd Font Mono 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -182,24 +182,29 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
+#colors
+set $green #73ad24
+set $grey #8c8488
+set $black #0a0c09
+set $purpule #f21bb9
+set $yellow #f6d616
+
 bar {
 	position top
         status_command i3status
 	colors {
 		background $black
 		statusline $green
-		focused_workspace $black $grey
-		active_workspace $green $grey
-		inactive_workspace $green $grey
-		urgent_workspace $green $grey
+    separator $yellow
+#   name                border    background  text
+		focused_workspace   $green    $green      $black
+		active_workspace    $black    $black      $green
+		inactive_workspace  $black    $black      $green
+		urgent_workspace    $black    $black      $green
 	}
 }
 #MINE
 
-set $green #73ad24
-set $grey #8c8488
-set $black #0a0c09
-set $purpule #f21bb9
 
 exec setxkbmap "us,ru" ",winkeys" "grp:win_space_toggle" #change lang to rus
 # change workspases
@@ -222,11 +227,12 @@ exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 for_window [class="i3bar"] gaps outer current set 1
 gaps inner 5
 gaps outer 5
-client.focused          $black $green $black $grey $black
-client.focused_inactive $green $black $grey $black
-client.unfocused        $green $black $grey $black
-client.urgent           $green $black $grey $black
-client.placeholder      $green $black $grey $black
+# class                 border  backgr  text      indicator   child_border
+client.focused          $black  $green  $black    $grey       $black
+client.focused_inactive $green  $black  $grey     $black      $green
+client.unfocused        $green  $black  $grey     $black      $green
+client.urgent           $green  $black  $grey     $black      $green
+client.placeholder      $green  $black  $grey     $black      $green
 
 client.background       $black
 # for_window [class="^.*"] border pixel 1

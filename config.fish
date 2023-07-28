@@ -1,3 +1,5 @@
+export PATH="$HOME/.local/share/nvim/mason/bin/:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 alias ls="lsd"
 alias py="python3"
 alias nv="nvim"

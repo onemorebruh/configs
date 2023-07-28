@@ -13,3 +13,9 @@ cp config.fish $HOME/.config/fish/config.fish
 
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
+cd /tmp/
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip
+unzip JetBrainsMono.zip
+mv JetBrainsMono/JetBrains*.ttf /usr/share/fonts/ttf
+fc-cache -vf
