@@ -36,7 +36,7 @@ The design of the configuration is inspired by watch dogs 2
 - [ ] add xinitrc
 - [ ] make and add tmux config
 - [ ] update `arch_update_playbook` so it will install all packages I need on all the arch based servers
-- [ ] add comments to config
+- [x] add comments to config
 - [ ] set close completions by `ESC` in nvim
 - [x] add installation of modified my nerd-fonts jetbrains mono
 - [x] remove configs I don't use anymore

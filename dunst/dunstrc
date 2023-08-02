@@ -1,0 +1,12 @@
+[change-format]
+        appname = dunstify
+        format = "<b>%s</b>\n<i>%b</i>"
+
+[change-appearance]
+  match_urgency = *
+  backround = "#0a0c09"
+  foreground = "#f21bb9"
+
+[change-urgency]
+    appname = system_notification
+    urgency = critical

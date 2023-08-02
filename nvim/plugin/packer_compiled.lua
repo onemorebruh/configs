@@ -120,6 +120,11 @@ _G.packer_plugins = {
     path = "/home/ira/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
+  ["lspkind.nvim"] = {
+    loaded = true,
+    path = "/home/ira/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
+    url = "https://github.com/onsails/lspkind.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/ira/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
@@ -174,11 +179,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ira/.local/share/nvim/site/pack/packer/start/vim-devicons",
     url = "https://github.com/ryanoasis/vim-devicons"
-  },
-  ["vim-jsx"] = {
-    loaded = true,
-    path = "/home/ira/.local/share/nvim/site/pack/packer/start/vim-jsx",
-    url = "https://github.com/mxw/vim-jsx"
   },
   ["vim-livedown"] = {
     loaded = true,

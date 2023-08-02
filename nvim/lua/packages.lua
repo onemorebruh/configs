@@ -1,40 +1,41 @@
 vim.cmd [[packadd packer.nvim]]
-require("packer").startup(function(use)
-  use "wbthompson/packer.nvim"
-  use "vim-airline/vim-airline"
-  use 'vim-airline/vim-airline-themes'
-  use 'ryanoasis/vim-devicons'
-  use 'jpalardy/vim-slime'
-  use 'shime/vim-livedown'
-  use 'ap/vim-css-color'
-  use 'terryma/vim-multiple-cursors'
-  use 'mattn/emmet-vim'
-  use 'scrooloose/nerdtree'
-  use 'mxw/vim-jsx'
-  use 'pacha/vem-tabline'
+require([[packer]]).startup(function(use)
 -- LSP
   use {
-    'VonHeikemen/lsp-zero.nvim',
+    [[VonHeikemen/lsp-zero.nvim]],
     requires = {
+      -- not specified
+      {[[wbthompson/packer.nvim]]},           --package manager
+      {[[vim-airline/vim-airline]]},          --prettifies bar
+      {[[vim-airline/vim-airline-themes]]},   --themes for previous package
+      {[[ryanoasis/vim-devicons]]},           --adds icons support
+      {[[jpalardy/vim-slime]]},               --allows to run interpreter from nvim
+      {[[shime/vim-livedown]]},               --realtime markdown
+      {[[ap/vim-css-color]]},                 --enables hex colors in nvim
+      {[[terryma/vim-multiple-cursors]]},     --enables multiple cursors
+      {[[mattn/emmet-vim]]},                  --adds emmet like in vscode
+      {[[scrooloose/nerdtree]]},              --adds filemanager
+      {[[pacha/vem-tabline]]},                --displays more info in bar
+      {[[onsails/lspkind.nvim]]},             --prettifies sugguestions
       -- LSP Support
-      {'neovim/nvim-lspconfig'},
-      {'williamboman/mason.nvim'},
-      {'williamboman/mason-lspconfig.nvim'},
+      {[[neovim/nvim-lspconfig]]},
+      {[[williamboman/mason.nvim]]},
+      {[[williamboman/mason-lspconfig.nvim]]},
 
       -- Autocompletion
-      {'hrsh7th/nvim-cmp'},
-      {'hrsh7th/cmp-buffer'},
-      {'hrsh7th/cmp-path'},
-      {'saadparwaiz1/cmp_luasnip'},
-      {'hrsh7th/cmp-nvim-lsp'},
-      {'hrsh7th/cmp-nvim-lua'},
+      {[[hrsh7th/nvim-cmp]]},
+      {[[hrsh7th/cmp-buffer]]},
+      {[[hrsh7th/cmp-path]]},
+      {[[saadparwaiz1/cmp_luasnip]]},
+      {[[hrsh7th/cmp-nvim-lsp]]},
+      {[[hrsh7th/cmp-nvim-lua]]},
 
       -- Snippets
-      {'L3MON4D3/LuaSnip'},
-      {'rafamadriz/friendly-snippets'},
+      {[[L3MON4D3/LuaSnip]]},
+      {[[rafamadriz/friendly-snippets]]},
     },
     config = function ()
-      require('mason.settings').set({
+      require([[mason.settings]]).set({
         log_level = vim.log.levels.DEBUG
       })
     end
