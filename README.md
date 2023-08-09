@@ -2,8 +2,37 @@
 
 This is a repo I use for saving my current config files
 
+
+## Colorschemes
+
+### Dedsec
 The design of the configuration is inspired by watch dogs 2
 
+colors i used:
+#07CF22
+#0A0C09
+#192224
+#193224
+#222E30
+#536991
+#5E6C70
+#648C0D
+#71BF24
+#73AD24
+#76A62E
+#848688
+#8C8488
+#912C00
+#A1A6A8
+#A4A6A8
+#BD9800
+#D91882
+#E2E4E5
+#F216A5
+#F21BB9
+#F6B616
+#F9F9F9
+#F9F9FF
 ## Obvious information about each component
 
 | name                          | purpouse                                      |

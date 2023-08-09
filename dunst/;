@@ -1,3 +1,0 @@
-[change-format]
-        appname = dunstify
-        format = "<b>%s</b>\n<i>%b</i>"
