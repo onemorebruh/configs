@@ -1,6 +1,6 @@
 vim.cmd [[packadd packer.nvim]]
 require([[packer]]).startup(function(use)
--- LSP
+--plugins
   use {
     [[VonHeikemen/lsp-zero.nvim]],
     requires = {
@@ -17,6 +17,23 @@ require([[packer]]).startup(function(use)
       {[[scrooloose/nerdtree]]},              --adds filemanager
       {[[pacha/vem-tabline]]},                --displays more info in bar
       {[[onsails/lspkind.nvim]]},             --prettifies sugguestions
+      {[[nvim-tree/nvim-web-devicons]]},      --option for dashboard-nvim
+--      {'glepnir/galaxyline.nvim',             --custom vim airline TODO set it up
+--        branch = 'main',
+--        config = Statusline_config,
+--        requires = { 'nvim-tree/nvim-web-devicons', opt = true },
+--      },
+      {
+	      [[glepnir/dashboard-nvim]],
+      	event = [[VimEnter]],
+	      config = function ()
+          require([[dashboard]]).setup{
+            theme = [[hyper]],
+		        config = Dashboard_config
+         }
+      end,
+             requires = {[[nvim-tree/nvim-web-devicons]]}
+      },           --displays better dashboard
       -- LSP Support
       {[[neovim/nvim-lspconfig]]},
       {[[williamboman/mason.nvim]]},
@@ -38,6 +55,7 @@ require([[packer]]).startup(function(use)
       require([[mason.settings]]).set({
         log_level = vim.log.levels.DEBUG
       })
-    end
+    end,
+--  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'} --filename tabs
   }
 end)

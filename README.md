@@ -38,9 +38,14 @@ The design of the configuration is inspired by watch dogs 2
 - [ ] update `arch_update_playbook` so it will install all packages I need on all the arch based servers
 - [x] add comments to config
 - [ ] set close completions by `ESC` in nvim
+- [ ] make multicursor mode work in nvim by holding `alt` and clicing
 - [x] add installation of modified my nerd-fonts jetbrains mono
 - [x] remove configs I don't use anymore
 - [ ] setup notifications background as black
 - [ ] add notifications for such actions as changing volume or brightness
 - [ ] make `battery_level_alert.py` start when login
 - [ ] make neofetch display logo.jpeg/logo.txt by default
+- [x] setup custom logo in nvim
+- [ ] clean nvim dashboard
+- [ ] setup nivm bufferlines
+- [ ] setup nvim galaxyline

@@ -2,7 +2,7 @@ local lsp = require([[lsp-zero]])
 local cmp = require([[cmp]])
 local lspkind = require([[lspkind]])
 local signs = {
-  Error =[[]],
+  Error =[[󰯆]],
   Warn = [[]],
   Hint = [[]],
   Info = [[]]
@@ -40,7 +40,6 @@ lsp.preset([[recommended]])
 local servers = {
   [[tsserver]],
   [[pyright]],
-  [[rust_analyzer]],
   [[clangd]],
   [[cssls]],
   [[html]],
@@ -60,6 +59,21 @@ for _, lsp in pairs(servers) do
   }
 end
 
+require([[lspconfig]]).rust_analyzer.setup{
+  settings = {
+    ['rust-analyzer'] = {
+      diagnostics = {
+        enable = true;
+      }
+    }
+  },
+  on_attach = on_attach,
+  update_in_insert = true,
+  flags = {
+    debounce_text_changes = 150
+  }
+}
+
 vim.diagnostic.config({
   update_in_insert = true,
   virtual_text = {
@@ -67,6 +81,7 @@ vim.diagnostic.config({
     prefixc = [[]],
   },
   severity_sort = true,
+  signs = true
 })
 
 cmp.setup({
