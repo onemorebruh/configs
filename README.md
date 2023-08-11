@@ -59,6 +59,8 @@ colors i used:
 
 `scripts/load_configs.sh` - bash script for installing my configs to the system
 
+I have no relation with content of `nvim/lua/dashboard` it was created by another person(sorrily i can't find who did it) and it is here only because dashboard wouldn't work witout it.
+
 ## TODO
 
 - [x] add alacritty config
@@ -67,7 +69,7 @@ colors i used:
 - [ ] update `arch_update_playbook` so it will install all packages I need on all the arch based servers
 - [x] add comments to config
 - [ ] set close completions by `ESC` in nvim
-- [ ] make multicursor mode work in nvim by holding `alt` and clicing
+- [ ] make multicursor mode work in nvim by holding `alt` and clicking
 - [x] add installation of modified my nerd-fonts jetbrains mono
 - [x] remove configs I don't use anymore
 - [ ] setup notifications background as black
@@ -77,4 +79,4 @@ colors i used:
 - [x] setup custom logo in nvim
 - [ ] clean nvim dashboard
 - [ ] setup nivm bufferlines
-- [ ] setup nvim galaxyline
+- [x] setup nvim galaxyline
