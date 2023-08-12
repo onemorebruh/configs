@@ -183,11 +183,11 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 #colors
-set $green #73ad24
-set $grey #8c8488
-set $black #0a0c09
-set $purpule #f21bb9
-set $yellow #f6d616
+set $green #00F528
+set $grey #193224
+set $black #0A0C09
+set $red #F6335B
+set $yellow #F4F051
 
 bar {
 	position top
@@ -216,7 +216,7 @@ bindsym $mod+Control+Right workspace next
 #
 #
 ## visualisation
-client.focused $grey $green $purpule $black $green
+client.focused $grey $green $red $black $green
 bindsym $mod+Ctrl+Up resize grow height 1 px or 1 ppt
 bindsym $mod+Ctrl+Down resize shrink height 1 px or 1 ppt
 #autostart

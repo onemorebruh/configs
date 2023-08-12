@@ -9,24 +9,24 @@ This is a repo I use for saving my current config files
 The design of the configuration is inspired by watch dogs 2
 
 colors i used:
-| hex       | xterm     |
-|-----------|-----------|
-| #0A0C09   | 0         |
-| #82E684   | 114       |
-| #9EE0A2   | 151       |
-| #CFD4C7   | 188       |
-| #193234   | 22        |
-| #00F528   | 10        |
-| #9E8FF6   | 141       |
-| #8502F4   | 93        |
-| #243AC3   | 26        |
-| #0CF5E7   | 50        |
-| #E3FF14   | 190       |
-| #F6335B   | 203       |
-| #F78FB4   | 211       |
-| #F5CE89   | 222       |
-| #F4F051   | 227       |
-| #F9F9F9   | 15        |
+| hex       | xterm     | color                                                                             |
+|-----------|-----------|-----------------------------------------------------------------------------------|
+| #0A0C09   | 0         | <div class="color" style="width:15px;height:15px;background-color:#0A0C09"></div> |
+| #82E684   | 114       | <div class="color" style="width:15px;height:15px;background-color:#82E684"></div> |
+| #9EE0A2   | 151       | <div class="color" style="width:15px;height:15px;background-color:#9EE0A2"></div> |
+| #CFD4C7   | 188       | <div class="color" style="width:15px;height:15px;background-color:#CFD4C7"></div> |
+| #193234   | 22        | <div class="color" style="width:15px;height:15px;background-color:#193234"></div> |
+| #00F528   | 10        | <div class="color" style="width:15px;height:15px;background-color:#00F528"></div> |
+| #9E8FF6   | 141       | <div class="color" style="width:15px;height:15px;background-color:#9E8FF6"></div> |
+| #8502F4   | 93        | <div class="color" style="width:15px;height:15px;background-color:#8502F4"></div> |
+| #243AC3   | 26        | <div class="color" style="width:15px;height:15px;background-color:#243AC3"></div> |
+| #0CF5E7   | 50        | <div class="color" style="width:15px;height:15px;background-color:#0CF5E7"></div> |
+| #E3FF14   | 190       | <div class="color" style="width:15px;height:15px;background-color:#E3FF14"></div> |
+| #F6335B   | 203       | <div class="color" style="width:15px;height:15px;background-color:#F6335B"></div> |
+| #F78FB4   | 211       | <div class="color" style="width:15px;height:15px;background-color:#F78FB4"></div> |
+| #F5CE89   | 222       | <div class="color" style="width:15px;height:15px;background-color:#F5CE89"></div> |
+| #F4F051   | 227       | <div class="color" style="width:15px;height:15px;background-color:#F4F051"></div> |
+| #F9F9F9   | 15        | <div class="color" style="width:15px;height:15px;background-color:#F9F9F9"></div> |
 
 ## Obvious information about each component
 

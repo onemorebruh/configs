@@ -9,9 +9,9 @@
 general {
         colors = true
         interval = 3
-        color_good = "#07cf2A"
-        color_bad = "#f21bb9"
-        color_degraded = "#f6d616"
+        color_good = "#00F528"
+        color_bad = "#F6335B"
+        color_degraded = "#F4F051"
 }
 
 order += "ethernet _first_"
