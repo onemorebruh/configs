@@ -1,6 +1,8 @@
 local lsp = require([[lsp-zero]])
 local cmp = require([[cmp]])
 local lspkind = require([[lspkind]])
+
+--signs
 local signs = {
   Error =[[󰯆]],
   Warn = [[]],
@@ -35,20 +37,41 @@ local suggest_signs = {
   TypeParameter = [[]],
 }
 
+--config
 lsp.preset([[recommended]])
 
-local servers = {
+local servers = { -- now it is generaly used for setting up lsp servers but it will be used for checking if lsp servers are installed in the future
   [[tsserver]],
   [[pyright]],
   [[clangd]],
   [[cssls]],
   [[html]],
+  [[grammarly]],
 }
+
+for _, server in pairs(servers) do
+  if vim.fn.executable(server) then
+    -- everything is fine. do nothing
+  else 
+    if server == [[tsserver]] then
+      vim.cmd([[MasonInstall typescript-language-server]])
+    elseif server == [[cssls]] then
+      vim.cmd([[MasonInstall css-lsp]])
+    elseif server == [[cssls]] then
+      vim.cmd([[MasonInstall html-lsp]])
+    elseif server == [[grammarly]] then
+      vim.cmd([[MasonInstall grammarly-languageserver]])
+    else
+      vim.cmd([[MasonInstall ]] .. server)
+    end
+  end
+end
 
 lsp.nvim_workspace()
 
 lsp.setup()
 
+--TODO rewrite so each lsp server will have own settings
 for _, lsp in pairs(servers) do
   require([[lspconfig]])[lsp].setup {
     on_attach = on_attach,
@@ -74,6 +97,7 @@ require([[lspconfig]]).rust_analyzer.setup{
   }
 }
 
+--sets signs virtual text (for error description) and updates in insert mode
 vim.diagnostic.config({
   update_in_insert = true,
   virtual_text = {
@@ -84,6 +108,7 @@ vim.diagnostic.config({
   signs = true
 })
 
+-- setups cmp and it's mappings
 cmp.setup({
   mapping = {
     ['<CR>'] = cmp.mapping.confirm({select = false}),

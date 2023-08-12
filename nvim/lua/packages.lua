@@ -6,8 +6,8 @@ require([[packer]]).startup(function(use)
     requires = {
       -- not specified
       {[[wbthompson/packer.nvim]]},           --package manager
-      {[[vim-airline/vim-airline]]},          --prettifies bar
-      {[[vim-airline/vim-airline-themes]]},   --themes for previous package
+--      {[[vim-airline/vim-airline]]},          --prettifies bar
+--      {[[vim-airline/vim-airline-themes]]},   --themes for previous package
       {[[ryanoasis/vim-devicons]]},           --adds icons support
       {[[jpalardy/vim-slime]]},               --allows to run interpreter from nvim
       {[[shime/vim-livedown]]},               --realtime markdown
@@ -18,11 +18,11 @@ require([[packer]]).startup(function(use)
       {[[pacha/vem-tabline]]},                --displays more info in bar
       {[[onsails/lspkind.nvim]]},             --prettifies sugguestions
       {[[nvim-tree/nvim-web-devicons]]},      --option for dashboard-nvim
---      {'glepnir/galaxyline.nvim',             --custom vim airline TODO set it up
---        branch = 'main',
---        config = Statusline_config,
---        requires = { 'nvim-tree/nvim-web-devicons', opt = true },
---      },
+      {'glepnir/galaxyline.nvim',             --custom vim airline
+        branch = 'main',
+        config = Statusline_config,
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true },
+      },
       {
 	      [[glepnir/dashboard-nvim]],
       	event = [[VimEnter]],
