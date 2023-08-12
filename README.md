@@ -9,24 +9,24 @@ This is a repo I use for saving my current config files
 The design of the configuration is inspired by watch dogs 2
 
 colors i used:
-| hex       | xterm     | color                                                                             |
-|-----------|-----------|-----------------------------------------------------------------------------------|
-| #0A0C09   | 0         | <div class="color" style="width:15px;height:15px;background-color:#0A0C09"></div> |
-| #82E684   | 114       | <div class="color" style="width:15px;height:15px;background-color:#82E684"></div> |
-| #9EE0A2   | 151       | <div class="color" style="width:15px;height:15px;background-color:#9EE0A2"></div> |
-| #CFD4C7   | 188       | <div class="color" style="width:15px;height:15px;background-color:#CFD4C7"></div> |
-| #193234   | 22        | <div class="color" style="width:15px;height:15px;background-color:#193234"></div> |
-| #00F528   | 10        | <div class="color" style="width:15px;height:15px;background-color:#00F528"></div> |
-| #9E8FF6   | 141       | <div class="color" style="width:15px;height:15px;background-color:#9E8FF6"></div> |
-| #8502F4   | 93        | <div class="color" style="width:15px;height:15px;background-color:#8502F4"></div> |
-| #243AC3   | 26        | <div class="color" style="width:15px;height:15px;background-color:#243AC3"></div> |
-| #0CF5E7   | 50        | <div class="color" style="width:15px;height:15px;background-color:#0CF5E7"></div> |
-| #E3FF14   | 190       | <div class="color" style="width:15px;height:15px;background-color:#E3FF14"></div> |
-| #F6335B   | 203       | <div class="color" style="width:15px;height:15px;background-color:#F6335B"></div> |
-| #F78FB4   | 211       | <div class="color" style="width:15px;height:15px;background-color:#F78FB4"></div> |
-| #F5CE89   | 222       | <div class="color" style="width:15px;height:15px;background-color:#F5CE89"></div> |
-| #F4F051   | 227       | <div class="color" style="width:15px;height:15px;background-color:#F4F051"></div> |
-| #F9F9F9   | 15        | <div class="color" style="width:15px;height:15px;background-color:#F9F9F9"></div> |
+| hex       | xterm     | color                                                    |
+|-----------|-----------|----------------------------------------------------------|
+| #0A0C09   | 0         | ![#0A0C09](https://placehold.co/15x15/0A0C09/0A0C09.png) |
+| #82E684   | 114       | ![#82E684](https://placehold.co/15x15/82E684/82E684.png) |
+| #9EE0A2   | 151       | ![#9EE0A2](https://placehold.co/15x15/9EE0A2/9EE0A2.png) |
+| #CFD4C7   | 188       | ![#CFD4C7](https://placehold.co/15x15/CFD4C7/CFD4C7.png) |
+| #193234   | 22        | ![#193234](https://placehold.co/15x15/193234/193234.png) |
+| #00F528   | 10        | ![#00F528](https://placehold.co/15x15/00F528/00F528.png) |
+| #9E8FF6   | 141       | ![#9E8FF6](https://placehold.co/15x15/9E8FF6/9E8FF6.png) |
+| #8502F4   | 93        | ![#8502F4](https://placehold.co/15x15/8502F4/8502F4.png) |
+| #243AC3   | 26        | ![#243AC3](https://placehold.co/15x15/243AC3/243AC3.png) |
+| #0CF5E7   | 50        | ![#0CF5E7](https://placehold.co/15x15/0CF5E7/0CF5E7.png) |
+| #E3FF14   | 190       | ![#E3FF14](https://placehold.co/15x15/E3FF14/E3FF14.png) |
+| #F6335B   | 203       | ![#F6335B](https://placehold.co/15x15/F6335B/F6335B.png) |
+| #F78FB4   | 211       | ![#F78FB4](https://placehold.co/15x15/F78FB4/F78FB4.png) |
+| #F5CE89   | 222       | ![#F5CE89](https://placehold.co/15x15/F5CE89/F5CE89.png) |
+| #F4F051   | 227       | ![#F4F051](https://placehold.co/15x15/F4F051/F4F051.png) |
+| #F9F9F9   | 15        | ![#F9F9F9](https://placehold.co/15x15/F9F9F9/F9F9F9.png) |
 
 ## Obvious information about each component
 
