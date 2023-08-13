@@ -2,7 +2,7 @@ local gl = require('galaxyline')
 local gls = gl.section
 gl.short_line_list = {'LuaTree','vista','dbui'}
 
-local colors = {
+Dedsec_colors = {
   bg = '#0A0C09',
   yellow = '#E3FF14',
   cyan = '#193234',
@@ -27,14 +27,14 @@ gls.left[1] = {
   GitIcon = {
     provider = function() return '[]' end,
     condition = buffer_not_empty,
-    highlight = {colors.bg,colors.green},
+    highlight = {Dedsec_colors.bg,Dedsec_colors.green},
   }
 }
 gls.left[2] = {
   GitBranch = {
     provider = 'GitBranch',
     condition = buffer_not_empty,
-    highlight = {colors.bg,colors.green},
+    highlight = {Dedsec_colors.bg,Dedsec_colors.green},
   }
 }
 
@@ -50,8 +50,8 @@ gls.left[3] = {
   LeftEnd = {
     provider = function() return '' end,
     separator = '',
-    separator_highlight = {colors.green, colors.bg},
-    highlight = {colors.green, colors.green}
+    separator_highlight = {Dedsec_colors.green, Dedsec_colors.bg},
+    highlight = {Dedsec_colors.green, Dedsec_colors.green}
   }
 }
 
@@ -59,8 +59,8 @@ gls.right[1] = {
   LineInfo = {
     provider = 'LineColumn',
     separator = '',
-    separator_highlight = {colors.purple, colors.bg},
-    highlight = {colors.bg, colors.purple},
+    separator_highlight = {Dedsec_colors.purple, Dedsec_colors.bg},
+    highlight = {Dedsec_colors.bg, Dedsec_colors.purple},
   },
 }
 
@@ -68,15 +68,15 @@ gls.right[2] ={
   FileIcon = {
     provider = 'FileIcon',
     condition = buffer_not_empty,
-    highlight = {colors.bg, colors.purple},
+    highlight = {Dedsec_colors.bg, Dedsec_colors.purple},
   },
 }
 gls.right[4] = {
   FileName = {
     provider = 'FileName',
     condition = buffer_not_empty,
-    separator_highlight = {colors.purple,colors.bg},
-    highlight = {colors.bg, colors.purple}
+    separator_highlight = {Dedsec_colors.purple,Dedsec_colors.bg},
+    highlight = {Dedsec_colors.bg, Dedsec_colors.purple}
   }
 }
 
@@ -84,8 +84,8 @@ gls.short_line_left[1] = {
   BufferType = {
     provider = 'FileTypeName',
     separator = '',
-    separator_highlight = {colors.bg, colors.purple},
-    highlight = {colors.grey,colors.purple}
+    separator_highlight = {Dedsec_colors.bg, Dedsec_colors.purple},
+    highlight = {Dedsec_colors.grey,Dedsec_colors.purple}
   }
 }
 
@@ -94,8 +94,8 @@ gls.short_line_right[1] = {
   BufferIcon = {
     provider= 'BufferIcon',
     separator = '',
-    separator_highlight = {colors.bg, colors.purple},
-    highlight = {colors.grey,colors.purple}
+    separator_highlight = {Dedsec_colors.bg, Dedsec_colors.purple},
+    highlight = {Dedsec_colors.grey,Dedsec_colors.purple}
   }
 }
 

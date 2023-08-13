@@ -105,7 +105,10 @@ vim.diagnostic.config({
     prefixc = [[]],
   },
   severity_sort = true,
-  signs = true
+  signs = true,
+  float = {
+    border = 'single',
+  },
 })
 
 -- setups cmp and it's mappings
