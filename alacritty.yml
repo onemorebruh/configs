@@ -805,33 +805,33 @@ font:
 #mine changes
 schemes:
   primary:
-    background: '#0a0c09'
-    foreground: '#73ad24'
+    background: '#0A0C09'
+    foreground: '#00F528'
 colors:
-  name: Atelierdune (dark)
-  author: Chris Kempson
+  name: dedsec
+  author: onemorebruh
   primary:
-    background: "#20201d"
-    foreground: "#a6a28c"
+    background: "#0A0C09"
+    foreground: "#00F528"
   cursor:
-    text: "#20201d"
-    cursor: "#a6a28c"
+    text: "#193234"
+    cursor: "#CFD4C7"
   normal:
-    black: "#20201d"
-    red: "#d73737"
-    green: "#60ac39"
-    yellow: "#cfb017"
-    blue: "#6684e1"
-    magenta: "#b854d4"
-    cyan: "#1fad83"
-    white: "#a6a28c"
+    black: "#0A0C09"
+    red: "#F6335B"
+    green: "#82E684"
+    yellow: "#F4F051"
+    blue: "#243AC3"
+    magenta: "#8502F4"
+    cyan: "#193234"
+    white: "#CFD4C7"
   bright:
-    black: "#7d7a68"
-    red: "#d73737"
-    green: "#60ac39"
-    yellow: "#cfb017"
-    blue: "#6684e1"
-    magenta: "#b854d4"
-    cyan: "#1fad83"
-    white: "#fefbec"
+    black: "#0A0C09"
+    red: "#F6335B"
+    green: "#9EE0A2"
+    yellow: "#E3FF14"
+    blue: "#0CF5E7"
+    magenta: "#9E8FF6"
+    cyan: "#193234"
+    white: "#F9F9F9"
 theme: Atelierdune.dark

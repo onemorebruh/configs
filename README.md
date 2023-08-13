@@ -27,6 +27,7 @@ colors i used:
 | #F5CE89   | 222       | ![#F5CE89](https://placehold.co/15x15/F5CE89/F5CE89.png) |
 | #F4F051   | 227       | ![#F4F051](https://placehold.co/15x15/F4F051/F4F051.png) |
 | #F9F9F9   | 15        | ![#F9F9F9](https://placehold.co/15x15/F9F9F9/F9F9F9.png) |
+| #F227F5   | 201       | ![#F227F5](https://placehold.co/15x15/F227F5/F227F5.png) |
 
 ## Obvious information about each component
 

@@ -11,13 +11,13 @@ local dedsec_ascii = {
 
 --TODO disable shortcut project and mru
 Dashboard_config = {
---  shortcut = { nil },
+--  shortcut = { enable = false },
   packages = { enable = false },
-  project = { nil },
-  mru = { nil },
+  project = { enable = false },
+  mru = { enable = false},
   header = dedsec_ascii,
   center = {
-    nil
+    enable = false
   },
   footer = { [[󰚌 <Dare to Resist> ]] }
 }
