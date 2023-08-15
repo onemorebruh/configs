@@ -96,7 +96,7 @@ require([[lspconfig]]).rust_analyzer.setup{
     debounce_text_changes = 150
   }
 }
-
+-- possible border border = {"/", "/", "/", "/", "/", "/", "/", "/"},
 --sets signs virtual text (for error description) and updates in insert mode
 vim.diagnostic.config({
   update_in_insert = true,
@@ -107,7 +107,7 @@ vim.diagnostic.config({
   severity_sort = true,
   signs = true,
   float = {
-    border = 'single',
+    border = [[double]],
   },
 })
 
@@ -118,8 +118,8 @@ cmp.setup({
     --[''] = cmp.mapping.cancel({select = false}), TODO
   },
   window = {
-    completion = cmp.config.window.bordered(),
-    documentation = cmp.config.window.bordered(),
+    completion = cmp.config.window.bordered({border = [[double]]}),
+    documentation = cmp.config.window.bordered({border = [[double]]}),
   },
   formatting = {
     format = lspkind.cmp_format({

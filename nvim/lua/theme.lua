@@ -3,23 +3,7 @@ vim.cmd([[set termguicolors]])
 
 require([[themes.dedsec]])
 
-local dedsec_ascii = {
-	[[█▒█▒█▀█▒█▀▀▒█▒█▒▒▒▀█▀▒█▒█▒█▀▀▒▒▒█▀█▒█▒▒▒█▀█▒█▀▄▒█▀▀▒▀█▀▒]],
-	[[█▀█▒█▄█▒█▒▒▒█▄▀▒▒▒▒█▒▒█▀█▒█▄▄▒▒▒█▄█▒█▒▒▒█▄█▒█▒█▒█▄▄▒▒█▒▒]],
-	[[█▒█▒█▒█▒█▄▄▒█▒█▒▒▒▒█▒▒█▒█▒█▄▄▒▒▒█▒▒▒█▄▄▒█▒█▒█▒█▒█▄▄▒▒█▒▒]],
-}
+Theme = Dedsec
 
---TODO disable shortcut project and mru
-Dashboard_config = {
---  shortcut = { enable = false },
-  packages = { enable = false },
-  project = { enable = false },
-  mru = { enable = false},
-  header = dedsec_ascii,
-  center = {
-    enable = false
-  },
-  footer = { [[󰚌 <Dare to Resist> ]] }
-}
 
-require([[themes.dedsec]])
+Statusline_config = Theme.statusline

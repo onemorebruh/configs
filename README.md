@@ -29,6 +29,14 @@ colors i used:
 | #F9F9F9   | 15        | ![#F9F9F9](https://placehold.co/15x15/F9F9F9/F9F9F9.png) |
 | #F227F5   | 201       | ![#F227F5](https://placehold.co/15x15/F227F5/F227F5.png) |
 
+some screenshots
+![[rust_errors.png]]
+![[wallpaper.png]]
+![[neofetch.png]]
+![[nvim dashboard.png]]
+![[lua_no_errors.png]]
+![[rust_errors.png]]
+
 ## Obvious information about each component
 
 | name                          | purpouse                                      |
@@ -72,7 +80,7 @@ I have no relation with content of `nvim/lua/dashboard` it was created by anothe
 - [ ] setup notifications background as black
 - [ ] add notifications for such actions as changing volume or brightness
 - [ ] make `battery_level_alert.py` start when login
-- [ ] make neofetch display logo.jpeg/logo.txt by default
+- [x] make neofetch display logo.jpeg/logo.txt by default
 - [x] setup custom logo in nvim
 - [ ] clean nvim dashboard
 - [x] setup nivm bufferlines

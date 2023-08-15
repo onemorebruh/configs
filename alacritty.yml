@@ -814,7 +814,7 @@ colors:
     background: "#0A0C09"
     foreground: "#00F528"
   cursor:
-    text: "#193234"
+    text: "#9EE0A2"
     cursor: "#CFD4C7"
   normal:
     black: "#0A0C09"
@@ -834,4 +834,4 @@ colors:
     magenta: "#9E8FF6"
     cyan: "#193234"
     white: "#F9F9F9"
-theme: Atelierdune.dark
+theme: dedsec

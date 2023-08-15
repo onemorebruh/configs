@@ -7,4 +7,3 @@ require([[lsp]])
 require([[bindings]])
 require([[aliases]])
 --require([[filetabs]]) --not finished
-

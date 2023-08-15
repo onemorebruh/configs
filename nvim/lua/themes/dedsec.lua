@@ -1,8 +1,8 @@
 local gl = require('galaxyline')
-local gls = gl.section
-gl.short_line_list = {'LuaTree','vista','dbui'}
 
-Dedsec_colors = {
+local gls = gl.section
+
+local colorscheme = {
   bg = '#0A0C09',
   yellow = '#E3FF14',
   cyan = '#193234',
@@ -16,42 +16,31 @@ Dedsec_colors = {
   red = '#F6335B'
 }
 
-local buffer_not_empty = function()
-  if vim.fn.empty(vim.fn.expand('%:t')) ~= 1 then
-    return true
-  end
-  return false
-end
+gl.short_line_list = {'LuaTree','vista','dbui'}
+
 
 gls.left[1] = {
   GitIcon = {
     provider = function() return '[]' end,
-    condition = buffer_not_empty,
-    highlight = {Dedsec_colors.bg,Dedsec_colors.green},
-  }
-}
-gls.left[2] = {
-  GitBranch = {
-    provider = 'GitBranch',
-    condition = buffer_not_empty,
-    highlight = {Dedsec_colors.bg,Dedsec_colors.green},
+    condition = Buffer_not_empty,
+    highlight = {colorscheme.bg,colorscheme.green},
   }
 }
 
-local checkwidth = function()
-  local squeeze_width  = vim.fn.winwidth(0) / 2
-  if squeeze_width > 40 then
-    return true
-  end
-  return false
-end
+gls.left[2] = {
+  GitBranch = {
+    provider = 'GitBranch',
+    condition = Buffer_not_empty,
+    highlight = {colorscheme.bg,colorscheme.green},
+  }
+}
 
 gls.left[3] = {
   LeftEnd = {
     provider = function() return '' end,
     separator = '',
-    separator_highlight = {Dedsec_colors.green, Dedsec_colors.bg},
-    highlight = {Dedsec_colors.green, Dedsec_colors.green}
+    separator_highlight = {colorscheme.green, colorscheme.bg},
+    highlight = {colorscheme.green, colorscheme.green}
   }
 }
 
@@ -59,24 +48,25 @@ gls.right[1] = {
   LineInfo = {
     provider = 'LineColumn',
     separator = '',
-    separator_highlight = {Dedsec_colors.purple, Dedsec_colors.bg},
-    highlight = {Dedsec_colors.bg, Dedsec_colors.purple},
+    separator_highlight = {colorscheme.red, colorscheme.bg},
+    highlight = {colorscheme.bg, colorscheme.red},
   },
 }
 
-gls.right[2] ={
+gls.right[2] = {
   FileIcon = {
     provider = 'FileIcon',
-    condition = buffer_not_empty,
-    highlight = {Dedsec_colors.bg, Dedsec_colors.purple},
+    condition = Buffer_not_empty,
+    highlight = {colorscheme.bg, colorscheme.red},
   },
 }
-gls.right[4] = {
+
+gls.right[3] = {
   FileName = {
     provider = 'FileName',
-    condition = buffer_not_empty,
-    separator_highlight = {Dedsec_colors.purple,Dedsec_colors.bg},
-    highlight = {Dedsec_colors.bg, Dedsec_colors.purple}
+    condition = Buffer_not_empty,
+    separator_highlight = {colorscheme.red,colorscheme.bg},
+    highlight = {colorscheme.bg, colorscheme.red}
   }
 }
 
@@ -84,8 +74,8 @@ gls.short_line_left[1] = {
   BufferType = {
     provider = 'FileTypeName',
     separator = '',
-    separator_highlight = {Dedsec_colors.bg, Dedsec_colors.purple},
-    highlight = {Dedsec_colors.grey,Dedsec_colors.purple}
+    separator_highlight = {colorscheme.bg, colorscheme.red},
+    highlight = {colorscheme.grey,colorscheme.red}
   }
 }
 
@@ -94,8 +84,35 @@ gls.short_line_right[1] = {
   BufferIcon = {
     provider= 'BufferIcon',
     separator = '',
-    separator_highlight = {Dedsec_colors.bg, Dedsec_colors.purple},
-    highlight = {Dedsec_colors.grey,Dedsec_colors.purple}
+    separator_highlight = {colorscheme.bg, colorscheme.red},
+    highlight = {colorscheme.grey,colorscheme.red}
   }
 }
 
+local logo_ascii = {
+	[[█▒█▒█▀█▒█▀▀▒█▒█▒▒▒▀█▀▒█▒█▒█▀▀▒▒▒█▀█▒█▒▒▒█▀█▒█▀▄▒█▀▀▒▀█▀▒]],
+	[[█▀█▒█▄█▒█▒▒▒█▄▀▒▒▒▒█▒▒█▀█▒█▄▄▒▒▒█▄█▒█▒▒▒█▄█▒█▒█▒█▄▄▒▒█▒▒]],
+	[[█▒█▒█▒█▒█▄▄▒█▒█▒▒▒▒█▒▒█▒█▒█▄▄▒▒▒█▒▒▒█▄▄▒█▒█▒█▒█▒█▄▄▒▒█▒▒]],
+}
+
+--TODO disable shortcut project and mru
+dashboard_config = {
+--  shortcut = { enable = false },
+  packages = { enable = false },
+  project = { enable = false },
+  mru = { enable = false},
+  header = logo_ascii,
+  center = {
+    enable = false
+  },
+  footer = { [[󰚌 <Dare to Resist> ]] }
+}
+
+
+Dedsec = {
+
+  colorscheme = colorscheme,
+  gl = gl,
+  gls = gls,
+  dashboard_config,
+}
