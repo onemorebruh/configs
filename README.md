@@ -30,12 +30,11 @@ colors i used:
 | #F227F5   | 201       | ![#F227F5](https://placehold.co/15x15/F227F5/F227F5.png) |
 
 some screenshots
-![[rust_errors.png]]
-![[wallpaper.png]]
-![[neofetch.png]]
-![[nvim dashboard.png]]
-![[lua_no_errors.png]]
-![[rust_errors.png]]
+![wallpaper.png](./images/wallpaper.png)
+![neofetch.png](./images/neofetch.png)
+![nvim dashboard.png](./images/nvim dashboard.png)
+![lua_no_errors.png](./images/lua_no_errors.png)
+![rust_errors.png](./images/rust_errors.png)
 
 ## Obvious information about each component
 
