@@ -96,7 +96,7 @@ local logo_ascii = {
 }
 
 --TODO disable shortcut project and mru
-dashboard_config = {
+local dashboard_config = {
 --  shortcut = { enable = false },
   packages = { enable = false },
   project = { enable = false },
@@ -111,8 +111,9 @@ dashboard_config = {
 
 Dedsec = {
 
+  name = [[dedsec]],
   colorscheme = colorscheme,
   gl = gl,
   gls = gls,
-  dashboard_config,
+  dashboard_config = dashboard_config,
 }

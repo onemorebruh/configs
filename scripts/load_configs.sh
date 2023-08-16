@@ -3,6 +3,7 @@
 # copy configs
 cd $HOME/configs 
 cp -r startup /etc/startup
+cp -r wallpaper /etc/startup/wallpaper/ 
 cp -r nvim $HOME/.config/
 cp -r i3 $HOME/.config/
 cp -r i3status $HOME/.config/

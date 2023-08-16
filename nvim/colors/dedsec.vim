@@ -15,7 +15,7 @@ hi Character      	guifg=#9EE0A2	guibg=NONE	guisp=NONE	gui=NONE	ctermfg=151	cter
 hi Comment        	guifg=#9EE0A2	guibg=NONE	guisp=NONE	gui=italic	ctermfg=22	ctermbg=0	cterm=italic
 hi Conditional    	guifg=#243AC3	guibg=NONE	guisp=NONE	gui=NONE	ctermfg=26	ctermbg=NONE	cterm=NONE
 hi Constant       	guifg=#9EE0A2	guibg=NONE	guisp=NONE	gui=NONE	ctermfg=NONE	ctermbg=151	cterm=NONE
-hi Cursor         	guifg=NONE	guibg=#F9F9F9	guisp=#F9F9F9	gui=NONE	ctermfg=NONE	ctermbg=15	cterm=NONE
+hi Cursor         	guifg=#0A0C09	guibg=#F9F9F9	guisp=#F9F9F9	gui=NONE	ctermfg=NONE	ctermbg=15	cterm=NONE
 hi CursorColumn   	guifg=NONE	guibg=#193224	guisp=#193224	gui=NONE	ctermfg=NONE	ctermbg=22	cterm=NONE
 hi CursorLine     	guifg=#00F528	guibg=#193224	guisp=#193224	gui=NONE	ctermfg=22	ctermbg=22	cterm=NONE
 hi Debug          	guifg=#243AC3	guibg=NONE	guisp=NONE	gui=NONE	ctermfg=26	ctermbg=NONE	cterm=NONE

@@ -29,7 +29,7 @@ require([[packer]]).startup(function(use)
 	      config = function ()
           require([[dashboard]]).setup{
             theme = [[hyper]],
-		        config = Theme.dashboard_config
+		        config = Dashboard_config
          }
       end,
              requires = {[[nvim-tree/nvim-web-devicons]]}

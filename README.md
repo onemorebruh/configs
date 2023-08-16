@@ -32,7 +32,7 @@ colors i used:
 some screenshots
 ![wallpaper.png](./images/wallpaper.png)
 ![neofetch.png](./images/neofetch.png)
-![nvim dashboard.png](./images/nvim dashboard.png)
+![nvim dashboard.png](./images/nvim_dashboard.png)
 ![lua_no_errors.png](./images/lua_no_errors.png)
 ![rust_errors.png](./images/rust_errors.png)
 
