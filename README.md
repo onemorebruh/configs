@@ -36,6 +36,10 @@ some screenshots
 ![lua_no_errors.png](./images/lua_no_errors.png)
 ![rust_errors.png](./images/rust_errors.png)
 
+> color palette was made by https://vk.com/mushroomchips
+
+to get this colorscheme only check the repo: https://github.com/onemorebruh/dedsec
+
 ## Obvious information about each component
 
 | name                          | purpouse                                      |
