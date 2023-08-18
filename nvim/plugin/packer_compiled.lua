@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/ira/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/home/ira/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/ira/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -148,11 +153,6 @@ _G.packer_plugins = {
     path = "/home/ira/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["neodev.nvim"] = {
-    loaded = true,
-    path = "/home/ira/.local/share/nvim/site/pack/packer/start/neodev.nvim",
-    url = "https://github.com/folke/neodev.nvim"
-  },
   nerdtree = {
     loaded = true,
     path = "/home/ira/.local/share/nvim/site/pack/packer/start/nerdtree",
@@ -176,12 +176,7 @@ _G.packer_plugins = {
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/ira/.local/share/nvim/site/pack/packer/start/packer.nvim",
-    url = "https://github.com/wbthompson/packer.nvim"
-  },
-  ["vem-tabline"] = {
-    loaded = true,
-    path = "/home/ira/.local/share/nvim/site/pack/packer/start/vem-tabline",
-    url = "https://github.com/pacha/vem-tabline"
+    url = "https://github.com/wbthomason/packer.nvim"
   },
   ["vim-css-color"] = {
     loaded = true,

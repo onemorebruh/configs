@@ -15,3 +15,4 @@ alias poweroff="systemctl poweroff"
 alias docker_clear="$HOME/configs/scripts/clear_all_containers.sh"
 alias copy_configs="$HOME/configs/scripts/copy_configs.sh"
 alias "git_log"="git log --graph  --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%C(auto)%d%C(reset)' --all"
+source $HOME/configs/scripts/volume_and_brightness_notifications.sh

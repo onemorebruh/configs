@@ -47,6 +47,7 @@ local servers = { -- now it is generaly used for setting up lsp servers but it w
   [[cssls]],
   [[html]],
   [[grammarly]],
+  [[bashls]],
 }
 
 for _, server in pairs(servers) do

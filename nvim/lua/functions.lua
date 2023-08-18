@@ -21,3 +21,10 @@ function Checkwidth()
   return false
 end
 
+function SetAlias(from, to)
+--  vim.cmd([[cnoreabbrev <expr>]] .. from ..
+--    [[ ((getcmdtype() ==":" and getcmdline() == "]] .. from .. [[)]] ..
+--    [[ and "]] .. to .. [[" or "]] .. from .. [[")]])
+  vim.cmd([[cnoreabbrev <expr> ]] .. from .. [[ ((getcmdtype() is#':' && getcmdline() is# ']] .. from .. [[')?(']] .. to .. [['):(']] .. from .. [['))]])
+end
+
