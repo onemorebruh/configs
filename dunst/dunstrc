@@ -1,12 +1,22 @@
+
 [change-format]
-        appname = dunstify
-        format = "<b>%s</b>\n<i>%b</i>"
+  appname = dunstify
+  geometry = "300x5-30+20"
+  frame_color = "#0A0C09"
+  font = JetBrainsMono Nerd Font Mono 8
+  format = "<b>%s</b>\n<i>%b</i>"
 
 [change-appearance]
   match_urgency = *
-  backround = "#0a0c09"
-  foreground = "#f21bb9"
+  background = "#0A0C09"
+  foreground = "#00F528"
 
 [change-urgency]
-    appname = system_notification
-    urgency = critical
+  appname = system_notification
+  urgency = critical
+
+[urgency_critical]
+  background = "#0A0C09"
+  foreground = "#00F528"
+  frame_color = "#00F528"
+  timeout = 0

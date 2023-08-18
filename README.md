@@ -50,6 +50,9 @@ some screenshots
 | `neofetch`                    | dir with neofetch config and logo             |
 | `scripts`                     | dir with bash scripts help me                 |
 | `wallpaper.jpg`               | wallpaper                                     |
+| `tmux.conf`                   | link to `.tmux/.tmux.conf`                    |
+| `tmux.conf.local`             | tmux interface configuration                  |
+| `.tmux`                       | default files from oh-my-tmux                 |
 
 ## I would like to say about but haven't mention in previous table
 
@@ -63,20 +66,22 @@ some screenshots
 
 I have no relation with content of `nvim/lua/dashboard` it was created by another person(sorrily i can't find who did it) and it is here only because dashboard wouldn't work witout it.
 
-# Installation
+## Installation
+
+run `sudo bash ./scripts/load_configs.sh`
 
 ## TODO
 
 - [x] add alacritty config
 - [ ] add xinitrc
-- [ ] make and add tmux config
+- [x] make and add tmux config
 - [ ] update `arch_update_playbook` so it will install all packages I need on all the arch based servers
 - [x] add comments to config
 - [ ] set close completions without changing by `ESC` in nvim
 - [ ] make multicursor mode work in nvim by holding `alt` and clicking
 - [x] add installation of modified my nerd-fonts jetbrains mono
 - [x] remove configs I don't use anymore
-- [ ] setup notifications background as black
+- [x] setup notifications background as black
 - [ ] add notifications for such actions as changing volume or brightness
 - [ ] make `battery_level_alert.py` start when login
 - [x] make neofetch display logo.jpeg/logo.txt by default

@@ -9,6 +9,9 @@ cp -r i3 $HOME/.config/
 cp -r i3status $HOME/.config/
 cp -r dunst $HOME/.config/ 
 cp -r neofetch $HOME/.config/
+cp -r tmux.conf $HOME/.tmux.conf
+cp -r tmux.conf.local $HOME/.tmux.conf.local
+cp -r .tmux $HOME/.tmux/
 cp alacritty.yml $HOME/.alacritty.yml
 cp config.fish $HOME/.config/fish/config.fish
 

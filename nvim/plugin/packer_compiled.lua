@@ -148,6 +148,11 @@ _G.packer_plugins = {
     path = "/home/ira/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["neodev.nvim"] = {
+    loaded = true,
+    path = "/home/ira/.local/share/nvim/site/pack/packer/start/neodev.nvim",
+    url = "https://github.com/folke/neodev.nvim"
+  },
   nerdtree = {
     loaded = true,
     path = "/home/ira/.local/share/nvim/site/pack/packer/start/nerdtree",
@@ -177,16 +182,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ira/.local/share/nvim/site/pack/packer/start/vem-tabline",
     url = "https://github.com/pacha/vem-tabline"
-  },
-  ["vim-airline"] = {
-    loaded = true,
-    path = "/home/ira/.local/share/nvim/site/pack/packer/start/vim-airline",
-    url = "https://github.com/vim-airline/vim-airline"
-  },
-  ["vim-airline-themes"] = {
-    loaded = true,
-    path = "/home/ira/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
-    url = "https://github.com/vim-airline/vim-airline-themes"
   },
   ["vim-css-color"] = {
     loaded = true,

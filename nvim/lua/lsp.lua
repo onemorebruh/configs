@@ -78,7 +78,7 @@ for _, lsp in pairs(servers) do
     update_in_insert = true,
     flags = {
       debounce_text_changes = 150
-    }
+    },
   }
 end
 
