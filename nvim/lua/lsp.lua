@@ -115,8 +115,8 @@ vim.diagnostic.config({
 -- setups cmp and it's mappings
 cmp.setup({
   mapping = {
-    ['<CR>'] = cmp.mapping.confirm({select = false}),
-    --[''] = cmp.mapping.cancel({select = false}), TODO
+    ['<CR>'] = cmp.mapping.confirm({select = true }),
+    ['<Esc>'] = cmp.mapping.abort(),
   },
   window = {
     completion = cmp.config.window.bordered({border = [[double]]}),

@@ -56,7 +56,7 @@ to get this colorscheme only check the repo: https://github.com/onemorebruh/deds
 | `wallpaper.jpg`               | wallpaper                                     |
 | `tmux.conf`                   | link to `.tmux/.tmux.conf`                    |
 | `tmux.conf.local`             | tmux interface configuration                  |
-| `.tmux`                       | default files from oh-my-tmux                 |
+| `tmux`                        | default files from oh-my-tmux                 |
 
 ## I would like to say about but haven't mention in previous table
 
@@ -81,7 +81,7 @@ run `sudo bash ./scripts/load_configs.sh`
 - [x] make and add tmux config
 - [ ] update `arch_update_playbook` so it will install all packages I need on all the arch based servers
 - [x] add comments to config
-- [ ] set close completions without changing by `ESC` in nvim
+- [x] set close completions without changing by `ESC` in nvim
 - [ ] make multicursor mode work in nvim by holding `alt` and clicking
 - [x] add installation of modified my nerd-fonts jetbrains mono
 - [x] remove configs I don't use anymore
@@ -94,3 +94,4 @@ run `sudo bash ./scripts/load_configs.sh`
 - [x] setup nivm bufferlines
 - [x] setup nvim galaxyline
 - [ ] set keybinding for copying to os' clipboard from nvim's visual mode
+- [x] fix tmux config hining issue

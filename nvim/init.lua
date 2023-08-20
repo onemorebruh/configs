@@ -6,4 +6,4 @@ require([[package_settings]])
 require([[lsp]])
 require([[bindings]])
 require([[aliases]])
-require([[filetabs]]) --not finished
+require([[filetabs]])

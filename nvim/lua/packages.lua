@@ -6,13 +6,11 @@ require([[packer]]).startup(function(use)
     requires = {
       -- not specified
       {[[wbthomason/packer.nvim]]},           --package manager
---      {[[vim-airline/vim-airline]]},          --prettifies bar
---      {[[vim-airline/vim-airline-themes]]},   --themes for previous package
       {[[ryanoasis/vim-devicons]]},           --adds icons support
       {[[jpalardy/vim-slime]]},               --allows to run interpreter from nvim
       {[[shime/vim-livedown]]},               --realtime markdown
       {[[ap/vim-css-color]]},                 --enables hex colors in nvim
-      {[[terryma/vim-multiple-cursors]]},     --enables multiple cursors
+      {[[otavioschwanck/cool-substitute.nvim]]},     --enables multiple cursors
       {[[mattn/emmet-vim]]},                  --adds emmet like in vscode
       {[[scrooloose/nerdtree]]},              --adds filemanager
       {[[onsails/lspkind.nvim]]},             --prettifies sugguestions

@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/ira/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["cool-substitute.nvim"] = {
+    loaded = true,
+    path = "/home/ira/.local/share/nvim/site/pack/packer/start/cool-substitute.nvim",
+    url = "https://github.com/otavioschwanck/cool-substitute.nvim"
+  },
   ["dashboard-nvim"] = {
     config = { "\27LJ\2\nj\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0006\3\4\0=\3\5\2B\0\2\1K\0\1\0\vconfig\21Dashboard_config\1\0\1\ntheme\nhyper\nsetup\14dashboard\frequire\0" },
     loaded = false,
@@ -192,11 +197,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ira/.local/share/nvim/site/pack/packer/start/vim-livedown",
     url = "https://github.com/shime/vim-livedown"
-  },
-  ["vim-multiple-cursors"] = {
-    loaded = true,
-    path = "/home/ira/.local/share/nvim/site/pack/packer/start/vim-multiple-cursors",
-    url = "https://github.com/terryma/vim-multiple-cursors"
   },
   ["vim-slime"] = {
     loaded = true,
