@@ -108,7 +108,7 @@ vim.diagnostic.config({
   severity_sort = true,
   signs = true,
   float = {
-    border = [[double]],
+    border = Theme.border,
   },
 })
 
@@ -116,11 +116,11 @@ vim.diagnostic.config({
 cmp.setup({
   mapping = {
     ['<CR>'] = cmp.mapping.confirm({select = true }),
-    ['<Esc>'] = cmp.mapping.abort(),
+    ['<C-q>'] = cmp.mapping.abort(),
   },
   window = {
-    completion = cmp.config.window.bordered({border = [[double]]}),
-    documentation = cmp.config.window.bordered({border = [[double]]}),
+    completion = cmp.config.window.bordered({border = Theme.border}),
+    documentation = cmp.config.window.bordered({border = Theme.border}),
   },
   formatting = {
     format = lspkind.cmp_format({

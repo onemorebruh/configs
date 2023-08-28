@@ -1,12 +1,8 @@
-vim.g.user_emmet_mode=[[a]]
+require([[packages.emmet]])
 
-require([[mason]]).setup({
-  ui = {
-    border = [[double]]
-  }
-})
+require([[packages.mason]])
 
---TODO confugure and get used to use
-require([[cool-substitute]]).setup({
-  setup_keybindings = true,
-})
+--TODO confugu--re and get used to use
+require([[packages.cool-substitute]])
+
+require([[packages.telescope]])

@@ -161,7 +161,7 @@ _G.packer_plugins = {
   nerdtree = {
     loaded = true,
     path = "/home/ira/.local/share/nvim/site/pack/packer/start/nerdtree",
-    url = "https://github.com/scrooloose/nerdtree"
+    url = "https://github.com/preservim/nerdtree"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -183,6 +183,16 @@ _G.packer_plugins = {
     path = "/home/ira/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/home/ira/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/ira/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
   ["vim-css-color"] = {
     loaded = true,
     path = "/home/ira/.local/share/nvim/site/pack/packer/start/vim-css-color",
@@ -192,6 +202,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ira/.local/share/nvim/site/pack/packer/start/vim-devicons",
     url = "https://github.com/ryanoasis/vim-devicons"
+  },
+  ["vim-go"] = {
+    loaded = true,
+    path = "/home/ira/.local/share/nvim/site/pack/packer/start/vim-go",
+    url = "https://github.com/fatih/vim-go"
   },
   ["vim-livedown"] = {
     loaded = true,

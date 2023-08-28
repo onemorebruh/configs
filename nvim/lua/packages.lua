@@ -12,7 +12,7 @@ require([[packer]]).startup(function(use)
       {[[ap/vim-css-color]]},                 --enables hex colors in nvim
       {[[otavioschwanck/cool-substitute.nvim]]},     --enables multiple cursors
       {[[mattn/emmet-vim]]},                  --adds emmet like in vscode
-      {[[scrooloose/nerdtree]]},              --adds filemanager
+      {[[preservim/nerdtree]]},              --adds filemanager in the left
       {[[onsails/lspkind.nvim]]},             --prettifies sugguestions
       {[[nvim-tree/nvim-web-devicons]]},      --option for dashboard-nvim
       {'glepnir/galaxyline.nvim',             --custom vim airline
@@ -47,6 +47,16 @@ require([[packer]]).startup(function(use)
       -- Snippets
       {[[L3MON4D3/LuaSnip]]},
       {[[rafamadriz/friendly-snippets]]},
+      
+      --telescope
+      {
+        [[nvim-telescope/telescope.nvim]],
+        tag = [[0.1.2]],
+        requires = { {'nvim-lua/plenary.nvim'} },
+      },
+
+
+      {[[fatih/vim-go]]}, --should help with go projects
     },
     config = function ()
       require([[mason.settings]]).set({
