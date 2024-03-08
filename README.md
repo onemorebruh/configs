@@ -2,7 +2,6 @@
 
 This is a repo I use for saving my current config files
 
-
 ## Colorschemes
 
 ### Dedsec
@@ -86,12 +85,12 @@ run `sudo bash ./scripts/load_configs.sh`
 - [x] add installation of modified my nerd-fonts jetbrains mono
 - [x] remove configs I don't use anymore
 - [x] setup notifications background as black
-- [ ] add notifications for such actions as changing volume or brightness
 - [ ] make `battery_level_alert.py` start when login
 - [x] make neofetch display logo.jpeg/logo.txt by default
 - [x] setup custom logo in nvim
-- [ ] clean nvim dashboard
+- [x] clean nvim dashboard
 - [x] setup nivm bufferlines
 - [x] setup nvim galaxyline
 - [ ] set keybinding for copying to os' clipboard from nvim's visual mode
 - [x] fix tmux config hining issue
+- [ ] set HOST variable
